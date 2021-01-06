@@ -1,6 +1,6 @@
 import React from 'react';
 import logoSvg from '../assets/img/pizza-logo.svg';
-import { Button } from './Button';
+import { Button } from '../components';
 
 export const Header = () => {
   const handleOnclick = () => {
