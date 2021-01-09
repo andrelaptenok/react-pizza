@@ -1,4 +1,2 @@
-export { Home }
-from './Home';
-export { Cart }
-from './Cart';
+export { Home } from './Home';
+export { Cart } from './Cart';

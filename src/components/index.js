@@ -6,3 +6,5 @@ export { Header }
 from './Header';
 export { SortPopup }
 from './SortPopup';
+export { PizzaBlock }
+from './PizzaBlock';
