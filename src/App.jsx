@@ -3,6 +3,7 @@ import { Route } from 'react-router-dom';
 import './App.css';
 import { Header } from './components';
 import { Home, Cart } from './pages';
+// import Store from './redux/store';
 
 export const App = () => {
   const [pizzas, setPizzas] = useState([]);
