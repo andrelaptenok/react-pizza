@@ -7,14 +7,11 @@ import store from './redux/store';
 
 import './scss/app.scss';
 
-ReactDOM.render( <
-    Router >
-    <
-    Provider store = { store } >
-    <
-    App / >
-    <
-    /Provider> <
-    /Router>,
-    document.getElementById('root'),
+ReactDOM.render(
+  <Router>
+    <Provider store={store}>
+      <App />
+    </Provider>
+  </Router>,
+  document.getElementById('root'),
 );
