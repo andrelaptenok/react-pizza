@@ -23,17 +23,18 @@ export const Home = () => {
   const isLoaded = useSelector(({ pizzas }) => pizzas.isLoaded);
   const { category, sortBy } = useSelector(({ filters }) => filters);
 
-  const onSelectCategory = React.useCallback(
-    (index) => {
-      dispatch(setCategory(index));
-    },
-    [category],
-  );
+  const onSelectCategory = React.useCallback((index) => {
+    dispatch(setCategory(index));
+  }, []);
 
   return (
     <div className="container">
       <div className="content__top">
-        <Categories onClickItem={onSelectCategory} items={categoryNames} />
+        <Categories
+          activeCategory={category}
+          onClickCategory={onSelectCategory}
+          items={categoryNames}
+        />
         <SortPopup items={sortItems} />
       </div>
       <h2 className="content__title">Все пиццы</h2>
