@@ -3,7 +3,16 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import { Button } from '../Button';
 
-export const PizzaBlock = ({ id, name, imageUrl, price, types, sizes, onClickAddPizza }) => {
+export const PizzaBlock = ({
+  id,
+  name,
+  imageUrl,
+  price,
+  types,
+  sizes,
+  onClickAddPizza,
+  addedCount,
+}) => {
   const [activeType, setActiveType] = useState(types[0]);
   const [activeSize, setActiveSize] = useState(0);
 
@@ -77,7 +86,7 @@ export const PizzaBlock = ({ id, name, imageUrl, price, types, sizes, onClickAdd
             />
           </svg>
           <span>Добавить</span>
-          <i>2</i>
+          {addedCount && <i>{addedCount}</i>}
         </Button>
       </div>
     </div>
@@ -91,6 +100,7 @@ PizzaBlock.propTypes = {
   types: PropTypes.arrayOf(PropTypes.number),
   sizes: PropTypes.arrayOf(PropTypes.number),
   onClickAddPizza: PropTypes.func,
+  addedCount: PropTypes.number,
 };
 
 PizzaBlock.defaultProps = {
