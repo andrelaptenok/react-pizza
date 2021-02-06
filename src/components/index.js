@@ -10,3 +10,5 @@ export { PizzaBlock }
 from './PizzaBlock';
 export { LoadingBlock }
 from './PizzaBlock/LoadingBlock';
+export { CartItem }
+from './CartItem';
