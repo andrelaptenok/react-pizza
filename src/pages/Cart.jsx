@@ -2,8 +2,8 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 
-import { CartItem } from '../components/CartItem';
-import { clearCart, removeCartItem } from '../redux/actions/cart';
+import { CartItem, Button } from '../components';
+import { clearCart, removeCartItem, plusCartItem, minusCartItem } from '../redux/actions/cart';
 import emptyCartImage from '../assets/img/empty-cart.png';
 
 export const Cart = () => {
@@ -23,6 +23,18 @@ export const Cart = () => {
     if (window.confirm('Вы действительно хотите удалить?')) {
       dispatch(removeCartItem(id));
     }
+  };
+
+  const onPlusItem = (id) => {
+    dispatch(plusCartItem(id));
+  };
+
+  const onMinusItem = (id) => {
+    dispatch(minusCartItem(id));
+  };
+
+  const onClickOrder = () => {
+    console.log('ВАШ ЗАКАЗ', items);
   };
 
   return (
@@ -104,6 +116,7 @@ export const Cart = () => {
             <div className="content__items">
               {addedPizzas.map((obj) => (
                 <CartItem
+                  key={obj.id}
                   id={obj.id}
                   name={obj.name}
                   type={obj.type}
@@ -111,6 +124,8 @@ export const Cart = () => {
                   totalPrice={items[obj.id].totalPrice}
                   totalCount={items[obj.id].items.length}
                   onRemove={onRemoveItem}
+                  onPlus={onPlusItem}
+                  onMinus={onMinusItem}
                 />
               ))}
             </div>
@@ -140,18 +155,20 @@ export const Cart = () => {
                     />
                   </svg>
 
-                  <span>Вернуться назад</span>
+                  <Link to="/">
+                    <span>Вернуться назад</span>
+                  </Link>
                 </a>
-                <div className="button pay-btn">
+                <Button onClick={onClickOrder} className="button pay-btn">
                   <span>Оплатить сейчас</span>
-                </div>
+                </Button>
               </div>
             </div>
           </div>
         ) : (
           <div className="cart cart--empty">
             <h2>
-              Корзина пустая <icon>😕</icon>
+              Корзина пустая <i>😕</i>
             </h2>
             <p>
               Вероятней всего, вы не заказывали ещё пиццу.
