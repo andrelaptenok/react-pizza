@@ -1,7 +1,5 @@
 <h1 align="center">React Pizza Shop</h1>
 
-<img src="https://img.shields.io/npm/dy/silentlad">
-
 <p align="center">
     <img src='https://img.shields.io/badge/React-17.0.1-blue'>
     <img src='https://img.shields.io/badge/React%20Redux-7.2-purple'>
@@ -10,21 +8,23 @@
     <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat">
 </p>
 
+<img src="./src/assets/react-pizza.png" width="100%">
+
 ## Description
 
 <p>
-Интернет-магазин по заказу пиццы - React Pizza Shop
+Online store for ordering pizza - React Pizza Shop
 </p>
 
 ## Stack
 
--ReactJS + hooks
--React Router
--Redux
--Redux thunk
--json-server
--Axios
--classnames
+- ReactJS + hooks
+- React Router
+- Redux
+- Redux thunk
+- json-server
+- Axios
+- classnames
 
 ## Project setup
 
