@@ -8,7 +8,7 @@
     <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat">
 </p>
 
-<img src="./src/assets/react-pizza.png" width="100%">
+<img src="./src/assets/img/react-pizza.png" width="100%" alt='react-pizza'>
 
 ## Description
 
