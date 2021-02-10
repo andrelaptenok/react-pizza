@@ -30,5 +30,5 @@ Online store for ordering pizza - React Pizza Shop
 
 ```
 npm install
-npm run serve
+npm run server
 ```
