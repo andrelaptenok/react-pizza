@@ -83,7 +83,7 @@
         "build": "node scripts/build.js",
         "test": "node scripts/test.js",
         "server": "node server.js",
-        "json-server": "json-server --watch public/db.json --port=3001",
+        "json-server": "json-server --watch public/db.json --port=3000",
         "heroku-postbuild": "yarn build"
     },
     "eslintConfig": {
@@ -92,7 +92,7 @@
             "react-app/jest"
         ]
     },
-    "proxy": "http://localhost:3001",
+    "proxy": "http://localhost:3000",
     "browserslist": {
         "production": [
             ">0.2%",
