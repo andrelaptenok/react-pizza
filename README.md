@@ -8,6 +8,8 @@
     <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat">
 </p>
 
+[Demo React Pizza Shop](https://reactpizza-app.herokuapp.com/)
+
 <img src="./src/assets/img/react-pizza.png" width="100%" alt='react-pizza'>
 
 ## Description
@@ -18,6 +20,7 @@ Online store for ordering pizza - React Pizza Shop
 
 ## Stack
 
+- HTML5 + SCSS
 - ReactJS + hooks
 - React Router
 - Redux
