@@ -20,7 +20,7 @@ Online store for ordering pizza - React Pizza Shop
 
 ## Stack
 
-- HTML5 + SCSS
+- SCSS
 - ReactJS + hooks
 - React Router
 - Redux
