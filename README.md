@@ -15,7 +15,7 @@
 ## Description
 
 <p>
-Online store for ordering pizza - React Pizza Shop
+Online store for ordering pizza - React Pizza Shop.
 </p>
 
 ## Stack
